@@ -3,4 +3,37 @@
     text-align: center;
     color: white;
     height: 100px;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 36px;
+}
+
+#class {
+    background-color: lightblue;
+}
+
+.card {
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    border: 1px;
+    
+}
+
+.card-body {
+    background-color: black;
+    
 }
