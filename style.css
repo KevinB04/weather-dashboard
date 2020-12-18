@@ -26,11 +26,20 @@ h1 {
 }
 
 .card {
-    align-items: center;
+    text-align: left;
+    height: 100px;
+}
+
+.card-1 {
+    text-align: left;
     height: 100px;
     width: 300px;
     border: 1px;
     
+}
+
+.submit {
+    background-color: blue;
 }
 
 .card-body {
