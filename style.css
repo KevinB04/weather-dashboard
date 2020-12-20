@@ -16,13 +16,9 @@ h1 {
 
 .jumbotron {
     text-align: center;
-    background-color: gray;
-    color: white;
-    font-size: 36px;
-}
-
-#class {
     background-color: lightblue;
+    color: black;
+    font-size: 36px;
 }
 
 .card {
@@ -30,19 +26,4 @@ h1 {
     height: 100px;
 }
 
-.card-1 {
-    text-align: left;
-    height: 100px;
-    width: 300px;
-    border: 1px;
-    
-}
 
-.submit {
-    background-color: blue;
-}
-
-.card-body {
-    background-color: black;
-    
-}

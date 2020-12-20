@@ -21,6 +21,30 @@ $(document).ready(function(){
   
   // Here we are building the URL we need to query the database
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Bujumbura,Burundi&appid=" + APIKey;
+
+    function alertCityName() {
+      var city = $(this).data("name");
+      alert(city);
+    }
+
+    function renderButtons() {
+
+      $("#submit").empty();
+
+      for (var i = 0; i < city.length; i++) {
+        var a = $("<button>");
+        a.addClass("city");
+        a.attr("data-name", city[i]);
+        a.text(city[i]);
+        $("submit").append(a);
+      }
+    }
+
+    $("#add-city").on("click", function(event) {
+      event.preventDefault();
+      var city = $("")
+    }
+
   
   // We then created an AJAX call
     $.ajax({
@@ -29,12 +53,15 @@ $(document).ready(function(){
     }).then(function(response) {
      console.log(response);
       console.log(queryURL);
-      $(".city").text("City: " + response.name);
-      $(".wind").text("Wind Speed: " + response.wind.speed);
-      $(".humidity").text("Humidity: " + response.main.humidity);
-      $(".temp").text("Temperature: " + response.main.temp);
+
+      // $(".city").text("City: " + response.name);
+      // $(".wind").text("Wind Speed: " + response.wind.speed);
+      // $(".humidity").text("Humidity: " + response.main.humidity);
+      // $(".temp").text("Temperature: " + response.main.temp);
   
     
       // AJAX GOES HERE LAST!
       });
     })
+
+    renderButtons();
