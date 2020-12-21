@@ -1,10 +1,27 @@
-console.log("Hello World");
+$(document).ready(function() {
 
-$("#hour-9 .description").val(localStorage.getItem("hour-9"))
+  console.log("Hello World");
 
-// api.openweathermap.org/data/2.5/forecast?q={city name},{state code},{country code}&appid={API key}
+  var APIKey = "f0f1cd985ea5ac5733a66416d91fac2f";
 
-$(document).ready(function(){
+  var queryURL = 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + "&units=metric" + "&APPID=f0f1cd985ea5ac5733a66416d91fac2f",
+
+  $('#searchWeather').click(function(){
+  var city = $("#city-input").val();
+    if(city != ''){
+      $.ajax({
+        url: queryURL,
+        method: "GET",
+        dataType: "json",
+        success: function(data){
+          console.log(data);
+        }
+  });
+    }else{
+      $("#error").html('Field cannot be blank');
+    }
+
+
     // DOM Variables
   
     // JavaScript Variables
@@ -14,13 +31,6 @@ $(document).ready(function(){
     // Function Calls
   
     // Event Listeners
-  
-  
-   // This is our API key. Add your own API key between the ""
-    var APIKey = "f0f1cd985ea5ac5733a66416d91fac2f";
-  
-  // Here we are building the URL we need to query the database
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Bujumbura,Burundi&appid=" + APIKey;
 
     function alertCityName() {
       var city = $(this).data("name");
@@ -42,17 +52,14 @@ $(document).ready(function(){
 
     $("#add-city").on("click", function(event) {
       event.preventDefault();
-      var city = $("")
-    }
+      var city = $("search").val().trim();
+      city.push(city);
+      renderButtons();
+    });
+
 
   
   // We then created an AJAX call
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function(response) {
-     console.log(response);
-      console.log(queryURL);
 
       // $(".city").text("City: " + response.name);
       // $(".wind").text("Wind Speed: " + response.wind.speed);
@@ -62,6 +69,9 @@ $(document).ready(function(){
     
       // AJAX GOES HERE LAST!
       });
-    })
+
+      $(" .description").val(localStorage.getItem(" "))
+
+    $(document).on("click", ".city", alertCityName);
 
     renderButtons();
