@@ -6,6 +6,7 @@ h1 {
     font-size: 24px;
 }
 
+
 .jumbotron {
     text-align: center;
     background-color: lightblue;
@@ -15,7 +16,10 @@ h1 {
 
 .card {
     text-align: left;
-    height: 100px;
+    height: 600px;
+    line-height: 1.5;
+    padding: 15px;
+    
 }
 
 #searchWeather {
