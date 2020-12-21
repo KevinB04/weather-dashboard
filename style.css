@@ -19,9 +19,10 @@ h1 {
     height: 600px;
     line-height: 1.5;
     padding: 15px;
-    
+    background-color: whitesmoke;
 }
 
 #searchWeather {
-    background-color: lightblue;
+    background-color: dodgerblue;
 }
+
