@@ -38,8 +38,12 @@ $(document).ready(function() {
       for(var i = 1; i < 6; i++) {
         console.log(res.daily[i])
         // create cards for each day
+
+        $("#today").append(card);
+        card.append(cardBody);
+        cardBody.append(title,description,temp,feelsLike,wind)
       }
     })
   }
 
-})
+});
