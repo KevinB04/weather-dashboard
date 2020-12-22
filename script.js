@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
   $("#searchWeather").on("click", function(e){
     e.preventDefault();
     var city = $("#city-input").val().trim();
@@ -37,6 +38,9 @@ $(document).ready(function() {
       console.log(res)
       for(var i = 1; i < 6; i++) {
         console.log(res.daily[i])
+
+        
+
         // create cards for each day
 
         $("#today").append(card);
