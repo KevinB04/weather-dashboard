@@ -14,7 +14,7 @@ I obtained all of the weather information in this project through the OpenWeathe
 
 ## License
 
-MIT 
+[MIT](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) [2020] [Kevin Buttimer]
 
