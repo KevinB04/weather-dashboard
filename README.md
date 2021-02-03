@@ -1,5 +1,12 @@
 # weather-dashboard
 
+## Table of Contents
+   - [Installation](#installation)
+   - [Usage](#usage)
+   - [Credits](#credits)
+   - [Contributions](#contributions)
+   - [License](#license)
+
 ## Installation 
 
 In this app, you can check the weather conditions for any location throughout the world. Type in a city in the search field, and the weather for that city will pop up. You will notice that your searches will be saved below the search bar so that you have the opportunity to easily cycle through your searches. 
@@ -11,6 +18,10 @@ In this app, you can check the weather conditions for any location throughout th
 ## Credits
 
 I obtained all of the weather information in this project through the OpenWeather API site https://openweathermap.org/api). Bootstrap (https://getbootstrap.com/) and the jQuery CDN (https://code.jquery.com/) helped me build the site that I wanted.
+
+## Contributions
+
+Not accepting contributions at this time.
 
 ## License
 
